@@ -23,6 +23,7 @@ export default tseslint.config(
         tsconfigRootDir: import.meta.dirname,
       },
     },
+    ignores: ['eslint.config.mjs', 'dist', 'node_modules'],
   },
   {
     rules: {
@@ -30,6 +31,10 @@ export default tseslint.config(
       '@typescript-eslint/no-floating-promises': 'warn',
       '@typescript-eslint/no-unsafe-argument': 'warn',
       "prettier/prettier": ["error", { endOfLine: "auto" }],
+      '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-empty-interface': 'off',
+      '@typescript-eslint/no-namespace': 'off'
     },
   },
 );
